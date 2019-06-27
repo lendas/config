@@ -20,7 +20,6 @@ nmap <F8> :TagbarToggle<CR>
 
 set nu
 set rnu
-"set cursorline
 set hlsearch
 set incsearch
 
