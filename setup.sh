@@ -1,5 +1,5 @@
 #packages
-sudo apt install openssh-server net-tools htop tmux git subversion pv 
+sudo apt install openssh-server net-tools htop tmux git subversion pv npm
 
 #docker
 curl https://get.docker.com | sh
@@ -24,3 +24,6 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 curl -fLo ~/.config/nvim/init.vim --create-dirs \
    https://raw.githubusercontent.com/lendas/config/master/nvim.vim
+   
+#PlugInstall
+#:CocInstall coc-json coc-tsserver coc-css coc-html coc-phpls coc-rls coc-git coc-rust-analyzer coc-yaml coc-xml coc-markdownlint coc-python coc-java
