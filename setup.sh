@@ -22,5 +22,5 @@ cd ~
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-curl -fLo ~/.local/nvim/init.vim --create-dirs \
+curl -fLo ~/.config/nvim/init.vim --create-dirs \
    https://raw.githubusercontent.com/lendas/config/master/nvim.vim
