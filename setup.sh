@@ -4,16 +4,6 @@ source $HOME/.cargo/env
 rustup default nightly-2019-11-25
 rustup component add rls
 
-
-#neovim
-cd ~
-mkdir .nv
-cd .nv
-  curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
-  chmod u+x nvim.appimage
-  echo "alias nv='~/.nv/nvim.appimage'" >> ~/.bashrc
-cd ~
-
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
