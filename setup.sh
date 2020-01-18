@@ -1,7 +1,7 @@
 #rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-rustup default nightly-2019-11-25
+rustup default nightly
 rustup component add rls
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
