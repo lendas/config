@@ -1,2 +1,2 @@
 # config
-My custom app configs.
+Minhas configurações. Fique a vontade para adaptá-las a sua realidade.
