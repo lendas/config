@@ -56,8 +56,14 @@ su luiz
     whoami
     git clone 
     cd /home/luiz
+
+    git clone https://aur.archlinux.org/yay.git
     git clone https://aur.archlinux.org/optimus-manager.git
     git clone https://aur.archlinux.org/optimus-manager-qt.git
+
+    cd yay
+        makepkg --syncdeps -i
+    cd ..
     
     cd optimus-manager
         makepkg --syncdeps -i
