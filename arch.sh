@@ -39,7 +39,7 @@ pacman -S xorg-server xorg-xrandr \
     plasma-nm networkmanager powerdevil baloo kdepim-addons akonadi telepathy-kde-meta \
     bluez bluez-utils pulseaudio-bluetooth sudo docker docker-compose \
     htop intel-ucode neovim grub efibootmgr inkscape gimp git \
-    subversion mesa base-devel nvidia nvidia-utils nvidia-settings xf86-video-intel npm
+    subversion mesa base-devel nvidia nvidia-utils nvidia-settings xf86-video-intel npm zsh yq jq
 
 useradd -m -G wheel,docker luiz
 
@@ -58,22 +58,21 @@ su luiz
     cd /home/luiz
 
     git clone https://aur.archlinux.org/yay.git
-    git clone https://aur.archlinux.org/optimus-manager.git
-    git clone https://aur.archlinux.org/optimus-manager-qt.git
+    #git clone https://aur.archlinux.org/optimus-manager.git
+    #git clone https://aur.archlinux.org/optimus-manager-qt.git
 
     cd yay
         makepkg --syncdeps -i
     cd ..
     
-    cd optimus-manager
-        makepkg --syncdeps -i
-    cd ..
+    #cd optimus-manager
+    #    makepkg --syncdeps -i
+    #cd ..
     
-    cd optimus-manager-qt
-        makepkg --syncdeps -i
-    cd ..
+    #cd optimus-manager-qt
+    #    makepkg --syncdeps -i
+    #cd ..
 exit
-
 
 systemctl enable sshd
 systemctl enable bluetooth
