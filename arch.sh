@@ -38,7 +38,7 @@ pacman -S xorg-server xorg-xrandr \
     ntfs-3g openssh sddm plasma packagekit-qt5 yakuake kwalletmanager \
     plasma-nm networkmanager powerdevil baloo kdepim-addons akonadi telepathy-kde-meta dolphin dolphin-plugins \
     bluez bluez-utils pulseaudio-bluetooth sudo docker docker-compose \
-    htop intel-ucode neovim grub efibootmgr inkscape gimp git \
+    htop intel-ucode neovim grub efibootmgr inkscape gimp git elisa dragon \
     subversion mesa base-devel nvidia nvidia-utils nvidia-settings xf86-video-intel npm zsh yq jq
 
 useradd -m -G wheel,docker luiz
