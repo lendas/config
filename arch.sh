@@ -35,7 +35,7 @@ echo "127.0.0.1 localhost note" > /etc/hosts
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 
 pacman -S xorg-server xorg-xrandr \
-    openssh sddm plasma packagekit-qt5 yakuake kwalletmanager \
+    ntfs-3g openssh sddm plasma packagekit-qt5 yakuake kwalletmanager \
     plasma-nm networkmanager powerdevil baloo kdepim-addons akonadi telepathy-kde-meta dolphin dolphin-plugins \
     bluez bluez-utils pulseaudio-bluetooth sudo docker docker-compose \
     htop intel-ucode neovim grub efibootmgr inkscape gimp git \
