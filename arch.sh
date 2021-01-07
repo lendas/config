@@ -1,5 +1,5 @@
 mkfs.fat -F32 /dev/sda1
-mkfs.ext4 /dev/sda2
+mkfs.f2fs /dev/sda2
 
 mount /dev/sda2 /mnt
 mkdir /mnt/efi
@@ -35,15 +35,15 @@ echo "127.0.0.1 localhost note" > /etc/hosts
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 
 pacman -S xorg-server xorg-xrandr \
-    ntfs-3g openssh sddm plasma packagekit-qt5 yakuake kwalletmanager \
-    plasma-nm networkmanager powerdevil baloo kdepim-addons akonadi telepathy-kde-meta dolphin dolphin-plugins \
-    bluez bluez-utils pulseaudio-bluetooth sudo docker docker-compose \
-    htop intel-ucode neovim grub efibootmgr inkscape gimp git elisa dragon \
-    subversion mesa base-devel nvidia nvidia-utils nvidia-settings xf86-video-intel npm zsh yq jq
+    ntfs-3g openssh sddm \
+    nm-applet networkmanager powerdevil  \
+    pulseaudio-bluetooth sudo docker \
+    htop amd-ucode neovim grub efibootmgr git \
+    subversion mesa base-devel nvidia nvidia-utils nvidia-settings npm yq jq i3 picom alacritty chromium dmenu dolphin feh gwenview okular
 
 useradd -m -G wheel,docker luiz
 
-grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=arxl
+grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=i3arch
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
@@ -54,7 +54,7 @@ passwd luiz
 
 su luiz
     whoami
-    git clone 
+
     cd /home/luiz
 
     git clone https://aur.archlinux.org/yay.git
